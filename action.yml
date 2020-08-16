@@ -1,0 +1,14 @@
+name: 'github-slack-notifier'
+description: 'Send messages to slack after passing all checks for PR review'
+inputs:
+  github-token:  # id of input
+    description: 'Git hub token to get access to github contexts'
+    required: true
+
+  slack-webhook:  # id of input
+    description: 'To send messages to slack'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
