@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Some action
       id: hello
-      uses: Sanskar95/github-slack-group-notifier@v1
+      uses: Sanskar95/github-slack-group-notifier@v2
       with:
         github-token: b6a370350c8b5f261770086c2f01af75450c3964
         slack-webhook: https://hooks.slack.com/services/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
