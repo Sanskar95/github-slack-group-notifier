@@ -43,7 +43,6 @@ function run() {
             throw new Error('Event payload missing `pull_request`')
         }
 
-        const client = new github.GitHub(token)
         core.debug(`Checking #${pr.number}`)
         if (getPullRequest()) {
             sendSlackMessage(slackWebhook, getMessageBody(pr.html_url, pr.number))
